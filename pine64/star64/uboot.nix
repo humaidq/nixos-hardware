@@ -1,13 +1,13 @@
 { fetchFromGitHub, buildUBoot }:
 
-buildUBoot rec {
+buildUBoot {
   version = "3.0.4";
 
   src = fetchFromGitHub {
-    owner = "Fishwaldo";
+    owner = "humaidq";
     repo = "u-boot";
-    rev = "172b47f62039605d6806fa96bd403c21cda28996"; # Star64 branch
-    hash = "sha256-UBPTLbSjDdL6NPUrAdsWcL28QSyiY/5oA+iqxl9dEGY=";
+    rev = "b801e9996c537f3225bb7acb2e27feeb9a98a198"; # Star64 branch
+    hash = "sha256-wNf9dxX6hhUGFb2bmtjFjCXqxSsyfZo9Qb6CWb0iAvA=";
   };
 
   defconfig = "pine64_star64_defconfig";
